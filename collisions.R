@@ -17,6 +17,7 @@ library(sf)
 library(rgdal)
 library(spDataLarge)
 library(raster)
+library(ggplot2)
 
 COL_i <- shapefile("COL_i.shp")
 
