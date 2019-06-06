@@ -56,14 +56,15 @@ ui <- fluidPage(
       tabPanel("Maps",
                fluidRow(
                  helpText("Collisions 2015- May 2019 resulting in at least one reported injury.
-                          Data Source: Chicago Data Portal. Adjust the slider to see crashes by hour and view
+                          Adjust the slider to see crashes by hour and view
                           fatal crashes by number of fatalities. Switch tabs to see plots."),
                  column(6,
                         leafletOutput("map2")
                  ),
                  column(6,
                         leafletOutput("map")
-                 )
+                 ),
+                 helpText(" Data Source: Chicago Data Portal- Traffic crashes dataset. Available at https://data.cityofchicago.org/Transportation/Traffic-Crashes-Crashes/85ca-t3if.")
                ) ),
       tabPanel("Plots", plotOutput("speed"), plotOutput("month")))
 
